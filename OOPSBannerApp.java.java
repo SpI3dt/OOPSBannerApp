@@ -1,7 +1,7 @@
 /**
  *OOPSBannerAPP UC3- OOPS Banner application ( Use case 3 ) 	
  *uses String.join() for better approach
-
+*/
 
 
 public class OOPSBannerApp{
