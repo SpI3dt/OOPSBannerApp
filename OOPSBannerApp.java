@@ -1,27 +1,29 @@
 /**	
-  *OOPSBannerApp - Render OOPS as banner using string array and loop
-  *uses an array lines[n]=print statement  and for loop statement
-  *author Siddharth B
-  *@version 4 
+  *OOPSBannerApp - Render OOPS as banner using an inline array initialization
+  *@author Siddharth B
+  *@version 5.0
 
  */
 
 
 
-public class OOPSBannerApp{
-	public static void main(String[] args){
-		String[] lines = new String[7];
-		lines[0]=System.out.println(String.join("   ***   ","   ***   ","******   ","   ***** "));
-		lines[1]=System.out.println(String.join(" **   ** "," **   ** ","**    ** "," **      "));
-		lines[2]=System.out.println(String.join("**     **","**     **","**     **","**       "));
-		lines[3]=System.out.println(String.join("**     **","**     **","**    ** "," **      ");
-		lines[4]=System.out.println(String.join("**     **","**     **","******   ","   ***   "));
-		lines[5]=System.out.println(String.join("**     **","**     **","**       ","      ** "));
-		lines[6]=System.out.println(String.join("**     **","**     **","**       ","       **"));
-		lines[7]=System.out.println(String.join(" **   ** "," **   ** ","**       ","      ** "));
-		lines[8]=System.out.println(String.join("   ***   ","   ***   ","**       "," *****   "));
-		
-		for(String line:lines){
-			System.out.println(line);
-	}
+public class OOPSBannerApp {
+    public static void main(String[] args) {
+
+        String[] lines = {
+            String.join("   ***   ","   ***   ","******   ","   ***** "),
+            String.join(" **   ** "," **   ** ","**    ** "," **      "),
+            String.join("**     **","**     **","**     **","**       "),
+            String.join("**     **","**     **","**    ** "," **      "),
+            String.join("**     **","**     **","******   ","   ***   "),
+            String.join("**     **","**     **","**       ","      ** "),
+            String.join("**     **","**     **","**       ","       **"),
+            String.join(" **   ** "," **   ** ","**       ","      ** "),
+            String.join("   ***   ","   ***   ","**       "," *****   ")
+        };
+
+        for (String line : lines) {
+            System.out.println(line);
+        }
+    }
 }
